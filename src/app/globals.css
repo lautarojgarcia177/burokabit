@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --color__pantone-310: #2DCED9;
-  --color__pantone-546: #003A40;
-  --color__pantone-611: #DEBF39;
+  --color__pantone-310: #2dced9;
+  --color__pantone-546: #003a40;
+  --color__pantone-611: #debf39;
 }
 
 .bg_dark {
@@ -18,4 +18,8 @@
 
 .bg_primary {
   background-color: var(--color__pantone-310);
+}
+
+.h-85dvh {
+  height: 85dvh;
 }
