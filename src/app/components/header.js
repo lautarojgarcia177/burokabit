@@ -19,22 +19,31 @@ export default function Header() {
 
   return (
     <nav className="flex justify-between">
-      <IconButton
-        variant="ghost"
-        onClick={onOpen}
-        aria-label="Search database"
-        icon={<HamburgerIcon />}
-      />
-      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader>Burokabit</DrawerHeader>
+      <div className="sm:hidden">
+        <IconButton
+          variant="ghost"
+          onClick={onOpen}
+          aria-label="Search database"
+          icon={<HamburgerIcon />}
+        />
+        <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+          <DrawerOverlay />
+          <DrawerContent>
+            <DrawerCloseButton />
+            <DrawerHeader>Burokabit</DrawerHeader>
 
-          <DrawerBody></DrawerBody>
-        </DrawerContent>
-      </Drawer>
-      <div className="pt-2">
+            <DrawerBody className="flex flex-col">
+              {links.map((link) => (
+                <Link key={link.name} href={link.href}>
+                  {link.name}
+                </Link>
+              ))}
+            </DrawerBody>
+          </DrawerContent>
+        </Drawer>
+      </div>
+      <div className="pt-2 hidden sm:block">Burokabit</div>
+      <div className="pt-2 hidden sm:block">
         {links.map((link) => (
           <Link key={link.name} href={link.href} className="me-3">
             {link.name}

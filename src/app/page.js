@@ -1,6 +1,10 @@
+import { Button } from "@chakra-ui/react";
+
 export default function Home() {
   return (
     <>
+      <Button colorScheme="pantone611">Gray</Button>
+
       <div className="flex flex-col items-center">
         <h1 className="text-xl">TUS PESOS A CRYPTO, EN MINUTOS.</h1>
         <h2 className=""> EXPERIENCIA RÁPIDA, FÁCIL Y SEGURA</h2>
