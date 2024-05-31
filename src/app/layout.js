@@ -2,6 +2,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 import localFont from "next/font/local";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "Burokabit",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

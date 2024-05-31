@@ -8,7 +8,6 @@ import {
   useDisclosure,
   DrawerHeader,
   DrawerBody,
-  IconButton,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
