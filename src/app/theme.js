@@ -42,6 +42,18 @@ const theme = extendTheme({
       800: "#634910",
       900: "#322408",
     },
+    whiteScheme: {
+      50: "#FFFFFF",
+      100: "#F7F7F7",
+      200: "#EFEFEF",
+      300: "#E7E7E7",
+      400: "#DFDFDF",
+      500: "#D7D7D7",
+      600: "#CFCFCF",
+      700: "#C7C7C7",
+      800: "#BFBFBF",
+      900: "#B7B7B7",
+    },
   },
 });
 
