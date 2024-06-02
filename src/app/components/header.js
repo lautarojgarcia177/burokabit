@@ -18,18 +18,19 @@ export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <nav className={`flex justify-between pe-8 h-10 sm:h-20 bg_dark`}>
+    <nav className={`flex justify-between pe-8 h-14 sm:h-20 bg_dark sticky top-0`}>
       <div className="sm:hidden">
         <div className="flex items-center">
           <HamburgerIcon
             color="whiteScheme.50"
             onClick={onOpen}
             className="ms-2"
+            boxSize={10}
           />
           <Image
             src="/BurokaBit_FO_logo_transparent.png"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
             alt="Birukabit logo"
           />
         </div>

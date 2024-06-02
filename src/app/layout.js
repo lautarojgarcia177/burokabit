@@ -14,10 +14,15 @@ const chaseFont = localFont({
   display: "swap",
 });
 
+const quicksandFont = localFont({
+  src: "../../public/Quicksand_Book.ttf",
+  display: "swap",
+});
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={chaseFont.className}>
+      <body className={`${chaseFont.className} ${quicksandFont}`}>
         <Providers>
           <Header />
           {children}

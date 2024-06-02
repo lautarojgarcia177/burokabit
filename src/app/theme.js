@@ -3,7 +3,15 @@ import { extendTheme } from "@chakra-ui/react";
 const theme = extendTheme({
   fonts: {
     heading: `'chase', sans-serif`,
-    body: `'chase', sans-serif`,
+    body: `'quicksand', sans-serif`,
+    textStyles: { 
+      primary: {
+          fontFamily: "chase"
+      },
+      secondary: {
+          fontFamily: "quicksand"
+      },
+  },
   },
   colors: {
     pantone310: {

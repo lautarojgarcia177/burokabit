@@ -23,3 +23,7 @@
 .h-85dvh {
   height: 85dvh;
 }
+
+.font-secondary {
+  font-family: "quicksand" !important;
+}
