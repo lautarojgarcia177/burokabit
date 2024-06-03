@@ -1,5 +1,5 @@
 export const fetchUsdtValue = async () => {
-  const response = await fetch("https://criptoya.com/api/argenbtc/usdt/ars/1");
+  const response = await fetch("https://criptoya.com/api/fiwind/usdt/ars/1");
   if (!response.ok) {
     throw new Error("Network response was not ok");
   }

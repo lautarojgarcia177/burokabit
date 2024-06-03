@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Button,
   Heading,
   OrderedList,
   ListItem,
@@ -12,8 +11,6 @@ import { fetchUsdtValue } from "./api/api";
 import Image from "next/image";
 
 export default function Home() {
-  const precioCompra = 1225.98;
-  const precioVenta = 1239.01;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [usdtValue, setUsdtValue] = useState(null);
@@ -29,7 +26,6 @@ export default function Home() {
         setLoading(false);
       }
     };
-
     getUsdtValue();
   }, []);
 
@@ -49,10 +45,10 @@ export default function Home() {
           {(!loading || !error) && (
             <div className="grid grid-cols-2 grid-rows-2 gap-x-8">
               <div>
-                <p className="text-3xl">AR$ {usdtValue?.bid}</p>
+                <p className="text-3xl">AR$ {usdtValue?.totalBid}</p>
               </div>
               <div>
-                <p className="text-3xl">AR$ {usdtValue?.ask}</p>
+                <p className="text-3xl">AR$ {usdtValue?.totalAsk}</p>
               </div>
               <div>
                 <p className="text-lg">VENDÉS</p>
