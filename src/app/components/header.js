@@ -8,6 +8,7 @@ import {
   useDisclosure,
   DrawerHeader,
   DrawerBody,
+  Divider
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
@@ -46,10 +47,11 @@ export default function Header() {
                 height={200}
                 alt="Birukabit logo"
               />
+            <Divider/>
             </DrawerHeader>
             <DrawerBody className="flex flex-col">
               {links.map((link) => (
-                <Link key={link.name} href={link.href}>
+                <Link key={link.name} href={link.href} className="mb-3">
                   {link.name}
                 </Link>
               ))}

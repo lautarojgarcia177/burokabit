@@ -1,7 +1,6 @@
-import { Text, Link } from "@chakra-ui/react";
+import { Text, Link, Divider } from "@chakra-ui/react";
 import Image from "next/image";
 import { links } from "../shared/links";
-import { Divider } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
