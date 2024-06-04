@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="flex flex-col items-center justify-around pt-20 pb-20 ps-5 pe-5 text-center h-85dvh">
+      <section className="bg-gradient-white flex flex-col items-center justify-around pt-20 pb-20 ps-5 pe-5 text-center h-85dvh">
         <Heading as="h1" size="xl">
           TUS PESOS A CRYPTO, EN MINUTOS.
         </Heading>
@@ -67,7 +67,7 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-between pt-20 pb-20 ps-5 pe-5 text-center bg_primary h-85dvh">
+      <section className="bg-gradient-primary flex flex-col items-center justify-between pt-20 pb-20 ps-5 pe-5 text-center bg_primary h-85dvh">
         <Heading as="h1" size="xl">
           EMPEZAR A OPERAR CON NOSOTROS: ES MUY SIMPLE
         </Heading>
@@ -84,7 +84,7 @@ export default function Home() {
           <ListItem>LISTO, OPERÁ SIN LÍMITES!</ListItem>
         </OrderedList>
       </section>
-      <section className="flex flex-col items-center justify-between pt-20 pb-20 ps-5 pe-5 text-center bg_gold h-85dvh">
+      <section className="bg-gradient-terciary flex flex-col items-center justify-between pt-20 pb-20 ps-5 pe-5 text-center bg_gold h-85dvh">
         <Heading as="h1" size="xl">
           CON BUROKABIT PODÉS:
         </Heading>

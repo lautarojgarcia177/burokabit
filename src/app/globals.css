@@ -27,3 +27,31 @@
 .font-secondary {
   font-family: "quicksand" !important;
 }
+
+.bg-gradient-white {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(45, 206, 217, 0.5) 100%
+  );
+}
+
+.bg-gradient-primary {
+  background: rgb(45, 206, 217);
+  background: linear-gradient(
+    180deg,
+    rgba(45, 206, 217, 0.5) 0%,
+    rgba(222, 191, 57, 0.5) 100%
+  );
+}
+
+.bg-gradient-terciary {
+  background: rgb(222, 191, 57);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 191, 57, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+}
+
