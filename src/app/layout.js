@@ -24,9 +24,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${chaseFont.className} ${quicksandFont}`}>
         <Providers>
-          <Header />
-          {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main class="flex-grow">{children}</main>
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

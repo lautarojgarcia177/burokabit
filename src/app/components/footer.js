@@ -4,7 +4,7 @@ import { links } from "../shared/links";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center bg_dark sm:grid sm:grid-cols-2 pt-3">
+    <footer className="flex flex-col items-center bg_dark pt-3">
       <Image
         src="/BurokaBit_FO_logo_transparent.png"
         width={200}
@@ -14,8 +14,8 @@ export default function Footer() {
       <Text fontSize="xs" color="white" align="center" className="ps-5 pe-5">
         LA PLATAFORMA MÁS RÁPIDA PARA REALIZAR TUS OPERACIONES
       </Text>
-      <Divider className="mt-7"/>
-      <div className="flex justify-around pt-6 pb-6 w-full">
+      <Divider className="mt-7 sm:hidden"/>
+      <div className="flex justify-around pt-6 pb-6 w-full sm:justify-center">
         {links.map((link) => (
           <Link
             key={link.name}

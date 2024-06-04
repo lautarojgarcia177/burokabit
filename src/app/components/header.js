@@ -8,7 +8,7 @@ import {
   useDisclosure,
   DrawerHeader,
   DrawerBody,
-  Divider
+  Divider,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "@chakra-ui/next-js";
@@ -19,7 +19,9 @@ export default function Header() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <nav className={`flex justify-between pe-8 h-14 sm:h-20 bg_dark sticky top-0`}>
+    <nav
+      className={`flex justify-between pe-8 h-14 sm:h-20 bg_dark sticky top-0`}
+    >
       <div className="sm:hidden">
         <div className="flex items-center">
           <HamburgerIcon
@@ -28,12 +30,14 @@ export default function Header() {
             className="ms-2"
             boxSize={10}
           />
-          <Image
-            src="/BurokaBit_FO_logo_transparent.png"
-            width={150}
-            height={150}
-            alt="Birukabit logo"
-          />
+          <Link href="/">
+            <Image
+              src="/BurokaBit_FO_logo_transparent.png"
+              width={150}
+              height={150}
+              alt="Birukabit logo"
+            />
+          </Link>
         </div>
         <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
           <DrawerOverlay />
@@ -41,13 +45,15 @@ export default function Header() {
             <DrawerCloseButton />
             <DrawerHeader>
               {" "}
-              <Image
-                src="/BurokaBit_logo_transparent.png"
-                width={200}
-                height={200}
-                alt="Birukabit logo"
-              />
-            <Divider/>
+              <Link href="/">
+                <Image
+                  src="/BurokaBit_logo_transparent.png"
+                  width={200}
+                  height={200}
+                  alt="Birukabit logo"
+                />
+              </Link>
+              <Divider />
             </DrawerHeader>
             <DrawerBody className="flex flex-col">
               {links.map((link) => (
@@ -61,12 +67,14 @@ export default function Header() {
       </div>
       <div className="hidden sm:block pt-1">
         {" "}
-        <Image
-          src="/BurokaBit_FO_logo_transparent.png"
-          width={200}
-          height={200}
-          alt="Birukabit logo"
-        />
+        <Link href="/">
+          <Image
+            src="/BurokaBit_FO_logo_transparent.png"
+            width={200}
+            height={200}
+            alt="Birukabit logo"
+          />
+        </Link>
       </div>
       <div className="pt-7 hidden sm:block">
         {links.map((link) => (
