@@ -55,3 +55,41 @@
   );
 }
 
+.bg-gradient {
+  background: rgb(222, 191, 57);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 191, 57, 0.3) 0%,
+    rgba(45, 206, 217, 0.3) 50%,
+    rgba(222, 191, 57, 0.3) 100%
+  );
+}
+
+.parallax {
+  /* Set a specific height */
+  min-height: 400px; 
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg__img--arg-crypto {
+  background-image: url("/argentina_crypto--mobile.webp");
+}
+
+@media (min-width: 640px) {
+  .bg__img--arg-crypto {
+    background-image: url("/argentina_crypto--desktop.webp");
+  }
+}
+
+.text-background--white {
+  background-color: #ffffffef;
+  border-radius: 6px;
+}
+
+.h-60px {
+  height: 60px;
+}
