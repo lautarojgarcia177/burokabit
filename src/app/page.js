@@ -134,7 +134,7 @@ export default function Home() {
           ))}
         </Stepper>
       </section>
-      <section className="parallax bg__img--arg-crypto flex flex-col items-center justify-between sm:justify-around pt-20 pb-20 ps-5 pe-5 text-center h-85dvh shadow-2xl">
+      <section className="parallax bg__img--crypto_operation flex flex-col items-center justify-between sm:justify-around pt-20 pb-20 ps-5 pe-5 text-center h-85dvh shadow-2xl">
         <div className="text-background--white p-3">
           <Heading as="h1" size="lg">
             CON BUROKABIT PODÉS:

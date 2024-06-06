@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <nav
-      className={`flex justify-between pe-8 h-14 sm:h-20 bg_dark sticky top-0`}
+      className={`flex justify-between pe-8 h-14 sm:h-20 bg_dark sticky top-0 z-10`}
     >
       <div className="sm:hidden">
         <div className="flex items-center">

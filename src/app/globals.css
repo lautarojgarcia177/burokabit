@@ -85,6 +85,16 @@
   }
 }
 
+.bg__img--crypto_operation {
+  background-image: url("/crypto_operation--mobile.webp");
+}
+
+@media (min-width: 640px) {
+  .bg__img--crypto_operation {
+    background-image: url("/crypto_operation--desktop.webp");
+  }
+}
+
 .text-background--white {
   background-color: #ffffffef;
   border-radius: 6px;

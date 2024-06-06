@@ -4,7 +4,7 @@ import { links } from "../shared/links";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col items-center bg_dark pt-3">
+    <footer className="flex flex-col items-center bg_dark pt-3 z-10">
       <Image
         src="/BurokaBit_FO_logo_transparent.png"
         width={200}
