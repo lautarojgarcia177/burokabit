@@ -41,13 +41,13 @@ export default function Header() {
         </div>
         <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
           <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton />
+          <DrawerContent bg="#003a40">
+            <DrawerCloseButton color='white'/>
             <DrawerHeader>
               {" "}
               <Link href="/">
                 <Image
-                  src="/BurokaBit_logo_transparent.png"
+                  src="/BurokaBit_FO_logo_transparent.png"
                   width={200}
                   height={200}
                   alt="Birukabit logo"
@@ -57,7 +57,12 @@ export default function Header() {
             </DrawerHeader>
             <DrawerBody className="flex flex-col">
               {links.map((link) => (
-                <Link key={link.name} href={link.href} className="mb-3">
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  color="whiteScheme.50"
+                  className="mb-3"
+                >
                   {link.name}
                 </Link>
               ))}
