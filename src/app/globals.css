@@ -103,3 +103,9 @@
 .h-60px {
   height: 60px;
 }
+
+@media (max-height: 666px) {
+  .hide-on-small-height {
+    display: none;
+  }
+}

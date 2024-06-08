@@ -109,7 +109,8 @@ export default function Home() {
           src="/A_clean_and_modern_landing_page_image_for_a_crypto_cropped.png"
           width={500}
           height={500}
-          className="mb-10"
+          className="mb-10 hide-on-small-height"
+          alt="crypto operations"
         />
         <Stepper
           index={activeStep}
