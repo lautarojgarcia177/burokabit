@@ -19,9 +19,16 @@ const ContactForm = () => {
     formState: { errors, isSubmitting },
   } = useForm();
 
-  const onSubmit = (values) => {
+  const onSubmit = async (values) => {
     // Handle form submission
     console.log(values);
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ })
+    })
   };
 
   return (
