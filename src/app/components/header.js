@@ -42,10 +42,10 @@ export default function Header() {
         <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
           <DrawerOverlay />
           <DrawerContent bg="#003a40">
-            <DrawerCloseButton color='white'/>
+            <DrawerCloseButton color="white" />
             <DrawerHeader>
               {" "}
-              <Link href="/">
+              <Link href="/" onClick={onClose}>
                 <Image
                   src="/BurokaBit_FO_logo_transparent.png"
                   width={200}
@@ -62,6 +62,7 @@ export default function Header() {
                   href={link.href}
                   color="whiteScheme.50"
                   className="mb-3"
+                  onClick={onClose}
                 >
                   {link.name}
                 </Link>
